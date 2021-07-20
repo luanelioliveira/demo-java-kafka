@@ -51,8 +51,8 @@ através do message broker Apacha Kafka.
 Com isso, foram implementados alguns serviços para efetuar um pedido de compra e com base nele,
 executar outros serviços de forma assíncrona. 
 Basicamente, o fluxo é criar um pedido de compra, enviar um email com pedido solicitado,
-efetuar o processamento de pagamento, enviar um email com resultado do pagamento.
-e também um serviço de log para receber todos as mensagens que estão sendo processadas pelo broker.
+efetuar o processamento de pagamento, enviar um email com resultado do pagamento 
+e também um serviço de log para receber todas os eventos que estão sendo processadas pelo broker.
 </p>
 
 ## 🔖 Diagrama
