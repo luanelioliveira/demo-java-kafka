@@ -52,7 +52,7 @@ Com isso, foram implementados alguns serviços para efetuar um pedido de compra 
 executar outros serviços de forma assíncrona. 
 Basicamente, o fluxo é criar um pedido de compra, enviar um email com pedido solicitado,
 efetuar o processamento de pagamento, enviar um email com resultado do pagamento 
-e também um serviço de log para receber todos os eventos que estão sendo processadas pelo broker.
+e também um serviço de log para receber todos os eventos que estão sendo processados pelo broker.
 </p>
 
 ## 🔖 Diagrama
