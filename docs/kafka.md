@@ -106,6 +106,9 @@ num.partittions = Numbers of the partitions per topic
 
 ### KafkaConsumer
 
+**ConsumerConfig.ACKS_CONFIG**
+- all -> Sync all replicas
+
 **ConsumerConfig.MAX_POLL_RECORDS_CONFIG**
 Number of the records per poll 
 
