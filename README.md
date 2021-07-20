@@ -60,7 +60,7 @@ e também um serviço de log para receber todos as mensagens que estão sendo pr
 <table>
   <tbody>
 	 <tr>
-	   <td><img alt="Sign In" src="./.github/img/diagram.png" width="200px" /></td>
+	   <td><img alt="Sign In" src="https://github.com/luanelioliveira/sample-kafka-pub-sub/blob/master/.github/img/diagram.png" width="500px" /></td>
 	 </tr>
   </tbody>
 </table>

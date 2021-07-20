@@ -10,6 +10,34 @@ $ tar -xzf kafka_2.13-2.8.0.tgz
 $ cd kafka_2.13-2.8.0
 ```
 
+### CONFIGURE THE KAFKA ENVIRONMENT
+
+Create directories to store logs
+```bash
+$ mkdir data
+$ mkdir data/kafka
+$ mkdir data/zookeeper
+```
+
+Configure the file `server.properties`
+```bash
+$ vi config/server.properties
+```
+
+Change the parameters `log.dirs` to:
+```
+$ DIR_KAFKA/data/kafka
+```
+
+Configure the file `zookeeper.properties`
+```bash
+$ vi config/zookeeper.properties
+```
+
+Change the parameter `dataDir` to:
+```
+$ DIR_KAFKA/data/zookeeper
+```
 
 ### START THE KAFKA ENVIRONMENT
 
@@ -64,3 +92,23 @@ In terminal run:
 $ bin/kafka-topics.sh --bootstrap-server localhost:9092 --list 
 ```
 
+## Extras
+
+### Zookeeper Properties
+
+dataDir = Directory to store log files
+
+
+### Kafka Server Properties
+
+log.dirs = list of directories to store log files
+num.partittions = Numbers of the partitions per topic
+
+### KafkaConsumer
+
+**ConsumerConfig.MAX_POLL_RECORDS_CONFIG**
+Number of the records per poll 
+
+**ConsumerConfig.AUTO_OFFSET_RESET_CONFIG**
+- earliest -> Starts reading since FIRST message sent to offset
+- latest   -> Starts reading since LAST message sent to offset
