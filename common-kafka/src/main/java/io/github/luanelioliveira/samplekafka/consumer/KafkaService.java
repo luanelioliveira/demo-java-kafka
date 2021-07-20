@@ -19,6 +19,7 @@ import java.util.Properties;
 import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 import java.util.regex.Pattern;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -84,6 +85,8 @@ public class KafkaService<T> implements Closeable {
     properties.setProperty(GROUP_ID_CONFIG, groupId);
     properties.setProperty(CLIENT_ID_CONFIG, UUID.randomUUID().toString());
     properties.setProperty(MAX_POLL_RECORDS_CONFIG, "1");
+    properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "latest");
+
     properties.putAll(overrideProperties);
     return properties;
   }
