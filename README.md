@@ -1,5 +1,5 @@
 <h1 align="center">
-    Sample Kafak Pub/Sub
+    Sample Kafka Pub/Sub
 </h1>
 
 <h3 align="center">
